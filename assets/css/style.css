@@ -19,7 +19,7 @@
   border-radius: 50%;
   
 } */
-.card::after {
+.card::after,.card::before {
   width: 200px;
   height: 200px;
   background-color: white;
@@ -28,18 +28,12 @@
   opacity: 30%;
   border-radius: 50%;
   position: absolute;
+}
+.card::after {
   top: 45%;
   left: 60%;
 }
 .card::before {
-  width: 200px;
-  height: 200px;
-  background-color: white;
-  content: "";
-  display: block;
-  opacity: 30%;
-  border-radius: 50%;
-  position: absolute;
   bottom: 30%;
   left: 75%;
 }
