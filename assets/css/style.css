@@ -1,0 +1,80 @@
+.section-card {
+  box-sizing: border-box;
+  margin: 12px;
+}
+
+.card {
+  min-width: 400px;
+  display: inline-block;
+  background: red;
+  border-radius: 12px;
+  position: relative;
+}
+/* .circle{
+  min-width: 5vw;
+  min-height: 10vh;
+  overflow: hidden;
+  background: white;
+  opacity: 30;
+  border-radius: 50%;
+  
+} */
+.card::after {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  content: "";
+  display: block;
+  opacity: 30%;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+}
+.card::before {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  content: "";
+  display: block;
+  opacity: 30%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30%;
+  left: 75%;
+}
+.card + .card {
+  margin-left: 32px;
+}
+.card-left {
+  background: linear-gradient(90deg, rgba(217,88,1,0.48503151260504207) 48%, rgba(128,10,123,0.5494572829131652) 94%);
+}
+.card-center {
+  background: linear-gradient(90deg, rgba(1,125,217,0.5718662464985995) 53%, rgba(10,80,128,0.5494572829131652) 94%);
+}
+.card-right {
+  background: linear-gradient(0deg, rgba(34,195,193,1) 0%, rgba(7,218,231,1) 100%);
+}
+.class-content {
+  color: white;
+  padding-left: 50px
+}
+.first-line {
+  font-size: 1.5em;
+  padding-top: 24px;
+  position: relative;
+}
+.second-line {
+  font-size: 2em;
+  padding-top: 24px;
+}
+.third-line {
+  font-size: 1.3em;
+  padding-bottom: 24px;
+  padding-top: 32px;
+}
+.icon-class {
+  vertical-align: middle;
+  position: absolute;
+  left: 85%;
+}
