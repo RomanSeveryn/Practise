@@ -10,15 +10,7 @@
   border-radius: 12px;
   position: relative;
 }
-/* .circle{
-  min-width: 5vw;
-  min-height: 10vh;
-  overflow: hidden;
-  background: white;
-  opacity: 30;
-  border-radius: 50%;
-  
-} */
+
 .card::after,.card::before {
   width: 200px;
   height: 200px;
