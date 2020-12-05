@@ -11,6 +11,7 @@
   border-radius: 5px;
   position: relative;
   padding: 32px;
+  overflow: hidden;
 }
 
 .card::after,
@@ -62,8 +63,8 @@
 }
 .card-header {
   font-size: 1.5em;
-
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 .current-result {
   font-size: 2em;
@@ -72,6 +73,4 @@
 .current-statistic {
   font-size: 1.2em;
   margin-top: 32px;
-}
-.icon-class {
 }
