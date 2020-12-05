@@ -5,13 +5,16 @@
 
 .card {
   min-width: 400px;
+  max-width: 600px;
   display: inline-block;
   background: red;
-  border-radius: 12px;
+  border-radius: 5px;
   position: relative;
+  padding: 32px;
 }
 
-.card::after,.card::before {
+.card::after,
+.card::before {
   width: 200px;
   height: 200px;
   background-color: white;
@@ -22,45 +25,53 @@
   position: absolute;
 }
 .card::after {
-  top: 45%;
-  left: 60%;
+  bottom: -43%;
+  right: -10%;
 }
 .card::before {
-  bottom: 30%;
-  left: 75%;
+  top: -40%;
+  right: -20%;
 }
 .card + .card {
   margin-left: 32px;
 }
-.card-left {
-  background: linear-gradient(90deg, rgba(217,88,1,0.48503151260504207) 48%, rgba(128,10,123,0.5494572829131652) 94%);
+.card:nth-child(3n-2) {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 190, 152, 1) 25%,
+    rgba(252, 131, 150, 1) 69%
+  );
 }
-.card-center {
-  background: linear-gradient(90deg, rgba(1,125,217,0.5718662464985995) 53%, rgba(10,80,128,0.5494572829131652) 94%);
+.card:nth-child(3n-1) {
+  background: linear-gradient(
+    90deg,
+    rgba(134, 197, 244, 1) 1%,
+    rgba(21, 143, 226, 1) 69%
+  );
 }
-.card-right {
-  background: linear-gradient(0deg, rgba(34,195,193,1) 0%, rgba(7,218,231,1) 100%);
+
+.card:nth-child(3n-3) {
+  background: linear-gradient(
+    90deg,
+    rgba(121, 216, 208, 1) 0%,
+    rgba(0, 207, 184, 1) 73%
+  );
 }
 .class-content {
   color: white;
-  padding-left: 50px
 }
-.first-line {
+.card-header {
   font-size: 1.5em;
-  padding-top: 24px;
+
   position: relative;
 }
-.second-line {
+.current-result {
   font-size: 2em;
-  padding-top: 24px;
+  margin: 24px 0px;
 }
-.third-line {
-  font-size: 1.3em;
-  padding-bottom: 24px;
-  padding-top: 32px;
+.current-statistic {
+  font-size: 1.2em;
+  margin-top: 32px;
 }
 .icon-class {
-  vertical-align: middle;
-  position: absolute;
-  left: 85%;
 }
